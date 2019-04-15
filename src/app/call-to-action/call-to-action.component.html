@@ -1,3 +1,23 @@
-<p>
-  call-to-action works!
-</p>
+<section class="cta">
+  <div class="cta-main">
+    <h1 #title class="cta-title">Title</h1>
+    <h2 #subtitle class="cta-subtitle">Sub Title</h2>
+    <div #content class="cta-content">
+      <p>This represents the content for the call to action. Ideally, this would capture the audiance's attention.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor mi vitae quam fermentum eleifend.
+        Sed neque est, vulputate nec eleifend nec, consectetur at sapien.</p>
+    </div>
+    <button
+      *ngIf="isActive">
+      Activate
+    </button>
+    <button
+      *ngIf="!isActive">
+      Deactive
+    </button>
+  </div>
+  <div class="cta-image">
+    <img src="../../assets/images/cta.jpeg">
+  </div>
+</section>
+
